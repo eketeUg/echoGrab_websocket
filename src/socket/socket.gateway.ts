@@ -9,6 +9,7 @@ import { TranscriptionDto } from './dto/transcription.dto';
 import { OnModuleInit } from '@nestjs/common';
 
 @WebSocketGateway({
+  path: '/echo',
   cors: {
     origin: '*', // Replace with your frontend domain
   },
